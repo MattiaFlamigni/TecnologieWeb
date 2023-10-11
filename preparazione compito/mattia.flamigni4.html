@@ -48,6 +48,47 @@
                     </fieldset>
                 </form>
             </section>
+
+            <section>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Preferenze</legend>
+                        <ul>
+                            <li>
+                                <label for="assicurazione">Assicurazione:</label><br/>
+                                <input type="radio" id="primo" name="assicurazione" value="Primo_Livello" />
+                                <label for="primo">Primo Livello</label><br/>
+                                <input type="radio" id="secondo" name="assicurazione" value="Secondo_Livello" />
+                                <label for="secondo">Secondo Livello</label><br/>
+                                <input type="radio" id="terzo" name="assicurazione" value="Terzo_Livello" />
+                                <label for="terzo">Terzo Livello</label>
+                            </li>
+                            <li>
+                                <label for="mezzo">Mezzo preferito</label>
+                                <select name="mezzo" id="mezzo">
+                                    <option value="Automobile" selected>Automobile</option>
+                                    <option value="Moto">Moto</option>
+                                    <option value="Bicicletta">Bicicletta</option>
+                                    <option value="Monopattino">Monopattino</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="automunito">Automunito</label>
+                                <input type="checkbox" id="automunito" name="automunito" />
+                                
+                            </li>
+
+                            <li>
+                                <label> Descrizione <br/>
+                                    <textarea id="descrizione" name="descrizione" rows="4" cols="50" required></textarea>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" name="submit" value="Submit" />
+                    <input type="reset" name="reset" value="Cancella" />
+                </form>
+            </section>
         </main>
     </body>
 </html>
