@@ -59,6 +59,11 @@ main{
     margin: 20px 5% 0;
 }
 
+main article section {
+    margin: 0 0 0 5% 
+}
+
+
  main article{
     background-color: white;
     border-color: #cacaca 1px solid;
@@ -73,14 +78,15 @@ main{
     text-align: center;
  }
 
- article > header > section > h2, article > header > section > p {
+ article  > header > h2, article > header > p {
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0 5%;
 }
 
-article > header > section{
+article > section > p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
 
 article > footer{
