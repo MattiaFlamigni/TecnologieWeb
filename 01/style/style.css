@@ -1,26 +1,32 @@
-body{
+body {
     background-color: #e4e4e4;
-    margin:0;
-    padding: 0;
-}
-
-body, header, h1, h2, ul {
     margin: 0;
     padding: 0;
 }
+
+body,
+header,
+h1,
+h2,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 /*(>)figlio diretto */
-body > header, body > footer {  
-    background-color: rgb(54,54,54);
+body>header,
+body>footer {
+    background-color: rgb(54, 54, 54);
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-body > header > h1 {
+body>header>h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-nav{
+nav {
     margin: 0 5%;
 }
 
@@ -28,10 +34,10 @@ nav ul {
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     width: 45%;
-    background-color: rgb(54,54,54);
+    background-color: rgb(54, 54, 54);
     text-align: center;
     margin: 10px 0 0;
 }
@@ -47,50 +53,52 @@ nav ul li a {
 }
 
 
-nav ul li:nth-child(odd){ /*elementi figli di li (odd=) in posizione dispari*/
+nav ul li:nth-child(odd) {
+    /*elementi figli di li (odd=) in posizione dispari*/
     margin-right: 10%;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(219, 69, 83);
 }
 
-main{
+main {
     margin: 20px 5% 0;
 }
 
 
- main article{
+main article {
     background-color: white;
     border-color: #cacaca 1px solid;
     margin-bottom: 20px
- }
+}
 
- article > header > img {
+article>header>img {
     max-height: 200px;
- }
+}
 
- article > header{
+article>header {
     text-align: center;
- }
+}
 
- article  > header > h2, article > header > p {
+article>header>h2,
+article>header>p {
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0 5%;
 }
 
-article > section{
+article>section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0 5%
 }
 
-article > footer{
-   text-align: right; 
-   padding: 20px 5%;
+article>footer {
+    text-align: right;
+    padding: 20px 5%;
 }
 
-article > footer > a {
+article>footer>a {
     background-color: #e4e4e4;
     border-radius: 5px;
     text-decoration: none;
