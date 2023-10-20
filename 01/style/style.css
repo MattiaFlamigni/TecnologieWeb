@@ -59,10 +59,6 @@ main{
     margin: 20px 5% 0;
 }
 
-main article section {
-    margin: 0 0 0 5% 
-}
-
 
  main article{
     background-color: white;
@@ -84,9 +80,9 @@ main article section {
     padding: 0 5%;
 }
 
-article > section > p{
+article > section{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
+    padding: 0 5%
 }
 
 article > footer{
