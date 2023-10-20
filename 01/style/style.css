@@ -52,5 +52,6 @@ nav ul li:nth-child(odd){ /*elementi figli di li (odd=) in posizione dispari*/
 }
 
 nav ul li a:hover{
-    color: red;
+    color: rgb(219, 69, 83);
 }
+
