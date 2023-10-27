@@ -75,6 +75,7 @@ main article {
 
 article>header>img {
     max-height: 200px;
+    max-width: 100%;
 }
 
 article>header {
@@ -110,4 +111,81 @@ article>footer>a {
 article>footer>a:hover {
     background-color: rgb(219, 69, 83);
     color: white;
+}
+
+aside{
+    background-color: white;
+    border: 1px solid #cacaca;
+    margin: 0 5% 20px;
+    box-sizing: border-box;
+}
+
+aside section{
+    margin: 20px;
+}
+
+aside section >h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 0 15px;
+}
+
+section ul{
+    list-style-type: none;
+}
+
+aside li{
+    margin-bottom: 10px;
+}
+
+aside li img{
+    width: 50px;
+    float: left;
+    margin: 0 0 5px;
+}
+
+aside li > a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+aside li > a:visited{
+    color: purple;
+}
+
+aside li > a:hover{
+    color: rgb(219, 69, 83);
+    text-decoration: underline;
+}
+
+
+
+@media screen and (min-width: 768px){
+    nav{
+        margin: 0 10%;
+    }
+
+    nav ul li {
+        width: 20%;
+    }
+
+    nav ul li not :last-child {
+        margin: 6%;
+    }
+
+    main, aside{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    main{
+        width: 50%;
+        margin: 20px 5% 0 10%;
+    }
+    aside{
+        width: 25%;
+        margin: 20px 10px 0 0;
+    }
 }
