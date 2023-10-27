@@ -168,11 +168,14 @@ aside li > a:hover{
     }
 
     nav ul li {
-        width: 20%;
+        width: 25%;
+
     }
 
-    nav ul li not :last-child {
-        margin: 6%;
+
+
+    nav ul li:not(:last-child) {
+        margin-right: 6%;
     }
 
     main, aside{
