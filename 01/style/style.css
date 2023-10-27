@@ -168,7 +168,7 @@ aside li > a:hover{
     }
 
     nav ul li {
-        width: 25%;
+        width: 20%;
 
     }
 
@@ -191,4 +191,34 @@ aside li > a:hover{
         width: 25%;
         margin: 20px 10px 0 0;
     }
+}
+
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+    margin: 5% 10%;
+    max-width: 100%;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td>a{
+    text-decoration: none;
+    color: black;
+}
+
+td>a:hover{
+    color:blue;
 }
