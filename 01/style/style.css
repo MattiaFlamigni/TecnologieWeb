@@ -90,7 +90,7 @@ article>header>p {
 
 article>section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 5%
+    padding: 0 5%; 
 }
 
 article>footer {
@@ -105,4 +105,9 @@ article>footer>a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
     padding: 5px;
+}
+
+article>footer>a:hover {
+    background-color: rgb(219, 69, 83);
+    color: white;
 }
