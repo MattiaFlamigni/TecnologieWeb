@@ -99,7 +99,7 @@ article>footer {
     padding: 20px 5%;
 }
 
-article>footer>a {
+article>footer>a, form input [type="submit"]{
     background-color: #e4e4e4;
     border-radius: 5px;
     text-decoration: none;
@@ -108,7 +108,7 @@ article>footer>a {
     padding: 5px;
 }
 
-article>footer>a:hover {
+article>footer>a:hover, form li input [type="submit"]{
     background-color: rgb(219, 69, 83);
     color: white;
 }
@@ -222,3 +222,38 @@ td>a{
 td>a:hover{
     color:blue;
 }
+
+section{
+    background-color: white;
+}
+form{
+    
+    margin: 20px;
+}
+
+form ul{
+    width: 80%;
+    margin: 20px 10% 0;
+}
+
+form li {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline-block;
+    width: 100%;
+}
+
+form li:last-child{
+    margin-right:20%;
+    text-align: right;
+}
+
+form input:not([type="submit"]){
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+
