@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
+
 body,
 header,
 h1,
@@ -20,6 +21,7 @@ body>footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    width:100%;
 }
 
 body>header>h1 {
@@ -63,8 +65,14 @@ nav ul li a:hover {
 }
 
 main {
-    margin: 20px 5% 0;
+    margin: 20px 5% 10%;
 }
+
+main>section{
+    padding-bottom: 20px;
+}
+
+
 
 
 main article {
@@ -97,6 +105,7 @@ article>section {
 article>footer {
     text-align: right;
     padding: 20px 5%;
+
 }
 
 article>footer>a, form input [type="submit"]{
@@ -163,33 +172,34 @@ aside li > a:hover{
 
 
 @media screen and (min-width: 768px){
-    nav{
+
+    
+    nav {
         margin: 0 10%;
     }
 
     nav ul li {
         width: 20%;
-
     }
 
-
-
-    nav ul li:not(:last-child) {
+    nav ul li:not(:last-child){
         margin-right: 6%;
     }
 
-    main, aside{
+    
+    main, aside {
         display: inline-block;
         vertical-align: top;
     }
-
-    main{
+    
+    main {
         width: 50%;
         margin: 20px 5% 0 10%;
     }
-    aside{
+
+    aside {
         width: 25%;
-        margin: 20px 10px 0 0;
+        margin: 20px 10% 0 0;
     }
 }
 
@@ -201,6 +211,7 @@ table{
     border: 1px solid black;
     margin: 5% 10%;
     max-width: 100%;
+   
 }
 
 td, th{
