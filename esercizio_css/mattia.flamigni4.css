@@ -101,5 +101,16 @@ nav a:hover{
 
 section{
     width:50%;
+    padding-left:5%;
 }
-prova
+
+section:nth-child(){
+    text-align: left;
+    color:black;
+}
+
+aside{
+    float:left;
+    width:20%;
+    color: violet;
+}
