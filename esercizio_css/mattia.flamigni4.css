@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     padding:0;
     margin:0;
@@ -9,12 +13,11 @@ p,h1,a{
 }
 
 body>header{
-    box-sizing: border-box;
     margin:5px;
     background: linear-gradient(to bottom right, pink, yellow, pink, rgb(200, 10, 200));
-    max-width: 100%;
+    max-width:100%;
     padding:30px 0;
-    border-bottom: 2pt solid rgb(200, 10, 200);
+    border-bottom: 2px solid rgb(200, 10, 200);
 }
 
 header > h1{
@@ -28,19 +31,14 @@ nav, aside, section{
 }
 
 nav{
-    box-sizing: border-box;
     margin: 0 5% 0 1%;
     padding: 5px;
     float:left;
     width:15%;
     background: linear-gradient(to bottom right, pink, yellow, pink, rgb(200, 10, 200));
     line-height: 2;
-    border-top: 2pt solid rgb(200, 10, 200);
-    border-bottom: 2pt solid rgb(200, 10, 200)
-}
-
-nav ul{
-    list-style-type: square;
+    border-top: 2px solid rgb(200, 10, 200);
+    border-bottom: 2px solid rgb(200, 10, 200)
 }
 
 nav:hover{
@@ -55,12 +53,8 @@ nav a:hover{
 }
 
 section{
-    box-sizing: border-box;
     width:50%;
-}
-body{
-    padding:0;
-    margin:0;
+    margin-left:3%;
 }
 
 header > h1{
@@ -69,21 +63,6 @@ header > h1{
     margin:0;
 }
 
-nav, aside, section{
-    display: inline-block;
-}
-
-nav{
-    box-sizing: border-box;
-    margin: 0 5% 0 1%;
-    padding: 5px;
-    float:left;
-    width:15%;
-    background: linear-gradient(to bottom right, pink, yellow, pink, rgb(200, 10, 200));
-    line-height: 2;
-    border-top: 2pt solid rgb(200, 10, 200);
-    border-bottom: 2pt solid rgb(200, 10, 200)
-}
 
 nav ul{
     list-style-type: square;
@@ -93,18 +72,9 @@ nav:hover{
     background: linear-gradient(to bottom right, pink, yellow, pink, rgb(200, 10, 200));
     background: linear-gradient(to bottom right, rgb(200, 10, 200), pink, yellow, pink);
 }
-nav a:hover{
-    background-color: violet;
-    color: white;
-    font-weight: bold;
-    padding:1.5%;
-}
 
-section{
-    box-sizing: border-box;
-    width:50%;
-    padding-left:5%;
-}
+
+
 
 section:nth-child(){
     text-align: left;
@@ -112,14 +82,12 @@ section:nth-child(){
 }
 
 aside{
-    box-sizing: border-box;
     float:left;
     width:20%;
-    color: rgb(200, 10, 200);;
+    color: rgb(200, 10, 200);
 }
 
 footer{
-    box-sizing: border-box;
     clear:both;
     background: linear-gradient(to top left, pink, yellow, pink, rgb(200, 10, 200));
     max-width: 100%;
