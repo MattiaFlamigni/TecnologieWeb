@@ -78,7 +78,8 @@ main>section{
 main article {
     background-color: white;
     border-color: #cacaca 1px solid;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    padding: 20px 5%;
 }
 
 article>header>img {
@@ -268,3 +269,8 @@ form input:not([type="submit"]){
 }
 
 
+
+article{
+    margin-left:30%;
+    width:80%;
+}
