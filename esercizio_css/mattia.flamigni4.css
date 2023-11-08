@@ -78,7 +78,7 @@ nav:hover {
     background: linear-gradient(to bottom right, rgb(200, 10, 200), pink, yellow, pink);
 }
 
-section:nth-child() {
+section *{
     text-align: left;
     color: black;
 }
