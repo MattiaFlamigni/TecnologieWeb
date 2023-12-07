@@ -1,12 +1,12 @@
 <?php
 require_once("bootstrap.php");
 
-$templateParams["titolo"] = "Blog TW - Home";
-$templateParams["nome"] = "lista-articoli.php";
+$templateParams["titolo"] = "Blog TW - Contatti";
+$templateParams["nome"] = "contatti.php";
 $templateParams["articolicasuali"] = $dbh->getRandomPosts(2);
 $templateParams["categorie"] = $dbh->getCategories();
 
-$templateParams["articoli"] = $dbh->getPosts(2);
+$templateParams["autori"] = $dbh->getAuthors(2);
 
 require("template/base.php");
 
