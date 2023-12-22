@@ -39,14 +39,14 @@ class DatabaseHelper{
     }
 
 
-    public function insertValue($valore) {
+    public function insertValue($valore, $idInsieme) {
         try {
-            $stmt = $this->db->prepare("INSERT INTO insiemi (valore) VALUES (?)");
+            $stmt = $this->db->prepare("INSERT INTO insiemi (valore, insieme) VALUES (?, ?)");
             if (!$stmt) {
                 throw new Exception("Errore nella preparazione della query: " . $this->db->error);
             }
     
-            $stmt->bind_param('i', $valore);
+            $stmt->bind_param('ii', $valore, $idInsieme);
             $stmt->execute();
     
             return true;
@@ -57,9 +57,23 @@ class DatabaseHelper{
         } finally {
             // Chiudi la query e rilascia le risorse
             $stmt->close();
-
-            return false;
         }
+    }
+
+
+    public function getLastRowInsieme(){
+        $stmt = $this->db->prepare("SELECT insieme FROM insiemi ORDER BY insieme DESC LIMIT 1");
+
+        if(!$stmt){
+            throw new Exception ("Errore nella preparazione della query: ".$this->db->error);
+        }
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $last_value = $result->fetch_assoc()['insieme'];
+
+        $nextValue = $last_value + 1;
+
+        return $nextValue;  
     }
     
 }

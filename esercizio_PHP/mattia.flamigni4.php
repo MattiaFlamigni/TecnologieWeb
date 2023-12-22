@@ -88,13 +88,24 @@ function UnisciOrConcatena($vettoreA, $vettoreB, $O){
     return $vettore;
 }
 
+/*inserisco i valori del vettore nel db*/
 function insert($dbh, $vettore){
     foreach($vettore as $valore){
-        $dbh->insertValue($valore);
+        $dbh->insertValue($valore, $dbh->getLastRowInsieme());
     }
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
