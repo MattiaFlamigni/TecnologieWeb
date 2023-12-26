@@ -3,6 +3,9 @@
 /**
  * Classe per la connessione al database
  */
+
+
+/*
 class DatabaseHelper{
     private $db;
 
@@ -76,6 +79,6 @@ class DatabaseHelper{
         return $nextValue;  
     }
     
-}
+}*/
 
 ?>
